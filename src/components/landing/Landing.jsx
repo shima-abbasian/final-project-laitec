@@ -24,19 +24,19 @@ function Landing() {
         <div className="w-1/2 gap-y-6 flex flex-col ml-32">
           <img
             className=" rounded-[40%] h-52 w-40 grayscale hover:grayscale-0 transition duration-500"
-            src="public/publicImages/home-photo-1-257jNod0.webp"
+            src="publicImages/home-photo-1-257jNod0.webp"
             alt=""
           />
           <img
             className=" rounded-b-[40%] h-52 w-40 grayscale hover:grayscale-0 transition duration-500"
-            src="public/publicImages/home-photo-2--o4d97Ez.webp"
+            src="publicImages/home-photo-2--o4d97Ez.webp"
             alt=""
           />
         </div>
         <div className="w-1/2">
           <img
             className="rounded-t-[40%] h-96 w-60 grayscale hover:grayscale-0 transition duration-500"
-            src=" public/publicImages/home-photo-3-AyMlcsjR.webp"
+            src="publicImages/home-photo-3-AyMlcsjR.webp"
             alt=""
           />
         </div>
