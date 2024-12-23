@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Shop from '../pages/shop.jsx';
+import Checkout from '../pages/checkout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path:"/shop",
     element: <Shop/>
+  },
+  {
+    path:"/checkout",
+    element: <Checkout/>
   }
 ]);
 
