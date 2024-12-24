@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ShoppingList from "../shoppingList/ShoppingList";
 
 function Landing() {
   return (
@@ -14,11 +16,14 @@ function Landing() {
           delectus provident quo eveniet.
         </p>
         <div className="mt-8">
-        <button className="px-4 py-2  bg-black rounded-lg text-white hover:bg-blue-600">
-          Discover Our Products
-        </button>
+          <Link to={"/shop"}>
+            <button className="px-4 py-2 bg-black rounded-lg text-white hover:bg-gray-600">
+              Discover Our Products
+            </button>
+          </Link>
+
         </div>
-       
+
       </div>
       <div className="flex w-1/2">
         <div className="w-1/2 gap-y-6 flex flex-col ml-32">
