@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import ShoppingList from "../shoppingList/ShoppingList";
 
 function NavBar() {
+  const [shoppingListVisible, setShoppingListVisible] = useState(false);
+
+  const toggleShoppingList = () => {
+    setShoppingListVisible((prev) => !prev); 
+  };
+  
+
   return (
     <>
       <nav className="flex flex-row justify-between items-center w-[90%] h-[60px] m-auto">
@@ -14,7 +22,7 @@ function NavBar() {
           <ul className="text-[18px] font-medium text-black">Explore All</ul>
         </div>
         <div className="relative">
-          <span>
+          <span onClick={toggleShoppingList}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -64,6 +72,9 @@ function NavBar() {
           </span>
         </div>
       </nav>
+      {shoppingListVisible && (
+        <ShoppingList onClose={() => setShoppingListVisible(false)} />
+      )}
     </>
   );
 }
