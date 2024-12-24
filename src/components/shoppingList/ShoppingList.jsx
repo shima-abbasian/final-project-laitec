@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ShoppingList({ onClose }) {
     return (
@@ -72,12 +73,15 @@ function ShoppingList({ onClose }) {
                     <span>$100</span>
                 </div>
                 <div className="flex text-center m-auto">
-                    <button
+                    <Link to={"/checkout"} className="w-full">
+                    <button 
                         type="button"
                         className="m-auto bg-black text-white px-3 py-5 text-sm rounded-md font-bold w-full"
                     >
                         Go To Checkout
                     </button>
+                    </Link>
+                    
                 </div>
             </div>
         </div>
