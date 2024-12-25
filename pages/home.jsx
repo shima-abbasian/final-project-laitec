@@ -5,7 +5,7 @@ import Landing from '../src/components/landing/Landing'
 function Home() {
     return (
         <>
-        <NavBar/>
+        <NavBar />
         <Landing/>
         </>
     )
